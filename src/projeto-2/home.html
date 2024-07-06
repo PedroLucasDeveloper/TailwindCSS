@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link href="../styles/output.css" rel="stylesheet">
+</head>
+<body class=" bg-gray-50 text-gray-600 h-screen w-screen">
+    <!--header-->
+    <div>
+        <div class="container mx-auto px-4 h-24 flex items-center justify-between">
+            <div class="font-black">
+                LOGO
+            </div>
+
+            <ul class="space-x-4 flex items-center ">
+                <li>
+                    <a href="" class="text-sm text-gray-600 hover:text-gray-800 hover:underline">Como reservar</a>
+                </li>
+
+                <li>
+                    <a href="" class="text-sm text-gray-600 hover:text-gray-800 hover:underline">Sobre nós</a>
+                </li>
+
+                <li>
+                    <a href="" class="text-sm text-gray-600 hover:text-gray-800 hover:underline">Informações</a>
+                </li>
+
+                <li>
+                    <a href="" class="text-sm text-gray-600 hover:text-gray-800 hover:underline">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--header-->
+
+    <!--banner-->
+    <div class="relative" style="background: url('./img/hero.jpg'); height: 450px; background-position: center; background-repeat: no-repeat; background-size: cover;">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="container mx-auto px-4 h-full flex flex-col items-center justify-center relative z-10">
+            <div class="text-center">
+                <h1 class="text-gray-200 font-bold text-3xl mb-2">Onde você quer ir?</h1>
+                <p class="text-green-100">Escolha o estado e cidade para achar os melhores resorts.</p>
+            </div>
+
+            <div class="mt-7">
+                <form class="space-x-4">
+                    <select class="bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500">
+                        <option value="">Escolha o estado</option>
+                    </select>
+
+                    <select class="bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500">
+                        <option value="">Escolha a cidade</option>
+                    </select>
+                    
+                    <button class="bg-orange-500 text-gray-800 font-medium px-3 py-2 rounded ">                    
+                        Pesquisar resort
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--banner-->
+
+    <!--featured resort-->
+    <div>
+        <div class="container mx-auto px-4 py-20">
+            <div class="flex">
+                <div class="pr-10">
+                    <div class="text-sm text-gray-400 font-medium">RESORT EM DESTAQUE</div>
+
+                    <div class="text-2xl">EcoResort Praia do Forte Bahia</div>
+
+                    <div class="text-sm text-gray-500 font-medium mt-2">Hotel qualidade 5 estrelas</div>
+
+                    <div class="text-sm text-gray-500 text-justify font-medium mt-4 mb-2">
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quisquam beatae dicta officiis rem, quis perspiciatis ullam voluptas dolorum excepturi aliquam laudantium nemo esse veniam ipsum vel aliquid. Nemo, laborum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui tenetur quibusdam magni laborum eveniet beatae iste, tempore distinctio fugiat? Excepturi, adipisci. Quo tempore deserunt est explicabo incidunt temporibus commodi beatae?</p>
+                    </div>
+
+                    <div class="text-sm text-gray-500 text-justify font-medium mt-4 mb-3">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui tenetur quibusdam magni laborum eveniet beatae iste, tempore distinctio fugiat? Excepturi, adipisci. Quo tempore deserunt est explicabo incidunt temporibus commodi beatae?</p>
+                    </div>
+
+                    <button class="bg-orange-500 text-gray-800 font-medium px-3 py-2 rounded">                    
+                        Solicitar reserva
+                    </button>
+                </div>
+
+                <div class="flex-shrink-0 ml-auto">
+                    <img src="./img/featured-img.jpg" alt="Imagem ilustrativa" width="450px" height="280px">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--featured resort-->
+
+    <!--resorts grid-->
+    <div>
+        <div class="container mx-auto px-4">
+            <div>
+                <h3 class="text-2xl text-gray-500 font-semibold text-center mb-8">Conheça mais resorts</h3>
+
+                <div class="grid grid-cols-4 grid-rows-2 gap-6">
+
+                    <div class="relative col-span-2 row-span-2 rounded-md overflow-hidden">
+                        <div class="absolute bottom-0 pl-4 pb-4 text-white font-bold z-20">
+                            Stark Resort
+                        </div>
+                        <img src="./img/shadow.png" class="absolute opacity-90 bottom-0 left-0 right-0 h-20 w-full z-10">
+                        <img src="./img/hotel-1.jpg" alt="hotel-1" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="relative col-span-2 h-40 rounded-md overflow-hidden">
+                        <div class="absolute bottom-0 pl-4 pb-4 text-white font-bold z-20">
+                            Vale no amanhecer Resort
+                        </div>
+                        <img src="./img/shadow.png" class="absolute opacity-90 bottom-0 left-0 right-0 h-20 w-full z-10">
+                        <img src="./img/hotel-2.jpg" alt="hotel-2" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="relative rounded-md overflow-hidden">
+                        <div class="absolute bottom-0 pl-4 pb-4 text-white font-bold z-20">
+                            Lagoa Azul Beach
+                        </div>
+                        <img src="./img/shadow.png" class="absolute opacity-90 bottom-0 left-0 right-0 h-20 w-full z-10">
+                        <img src="./img/hotel-3.jpg" alt="hotel-3" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="relative rounded-md overflow-hidden">
+                        <div class="absolute bottom-0 pl-4 pb-4 text-white font-bold z-20">
+                            Recando Hotel Resort
+                        </div>
+                        <img src="./img/shadow.png" class="absolute opacity-90 bottom-0 left-0 right-0 h-20 w-full z-10">
+                        <img src="./img/hotel-4.jpg" alt="hotel-4" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--resorts grid-->
+
+    <!--form search-->
+    <div class="py-20">
+        <div class="container mx-auto px-4 flex justify-center">
+            <form class="space-x-4">
+                <select class="bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500">
+                    <option value="">Escolha o estado</option>
+                </select>
+
+                <select class="bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500">
+                    <option value="">Escolha a cidade</option>
+                </select>
+                
+                <button class="bg-orange-500 text-gray-800 font-medium px-3 py-2 rounded ">                    
+                    Pesquisar resort
+                </button>
+            </form>
+        </div>
+    </div>
+    <!--form search-->
+
+    <!--footer-->
+    <div class=" border-t border-gray-200">
+        <div class="container mx-auto p-4 flex items-center justify-between">
+            <div class="text-gray-400 font-black">
+                LOGO
+            </div>
+
+            <div class="flex items-center space-x-3">
+                <a href="#"><img class="h-6 w-6" src="./img/facebook.png"></a>
+                <a href="#"><img class="h-6 w-6" src="./img/instagram.png"></a>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+
+</body>
+</html>
